@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="hero" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="styles.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script defer src="main.js"></script>
+    <title>Главная - Название вашего сайта</title>
+    <meta content="Краткое описание главной страницы вашего сайта" name="description">
+    <link href="assets/favicon.ico" rel="icon" type="image/x-icon">
+</head>
+<body>
+<!-- Шапка сайта -->
+<header class="site-header">
+    <a class="site-header__brand" href="/assets/favicon.ico">Лого</a>
+    <nav aria-label="Основная навигация" class="site-nav">
+        <ul class="site-nav__list">
+            <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="about.html">О нас</a></li>
+            <li class="site-nav__item"><a class="site-nav__link site-nav__link--cta" href="contacts.html">Связаться</a>
+            </li>
+        </ul>
+    </nav>
+    <button aria-pressed="false" class="theme-toggle" type="button">Тема</button>
+</header>
+
+<main>
+    <h1>Добро пожаловать на наш сайт!</h1>
+    <section id="services">
+        <h2>Наши услуги</h2>
+        <p>Описание предоставляемых услуг...</p>
+        <a href="contacts.html">Связаться с нами</a>
+    </section>
+
+    <section id="portfolio">
+        <h2>Портфолио</h2>
+        <!-- Браузер сам выбирает лучший ресурс по ширине контейнера -->
+        <img
+                alt="Проект: макет мобильного приложения"
+                loading="lazy"
+                sizes="(max-width: 700px) 92vw, (max-width: 1200px) 640px, 960px"
+                src="img/card-640.jpg"
+                srcset="img/card-640.jpg 640w, img/card-960.jpg 960w, img/card-1280.jpg 1280w">
+    </section>
+
+    <section id="contacts">
+        <h2>Контактная информация</h2>
+        <p>Наши контакты...</p>
+        <a href="contacts.html">Подробнее</a>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023 Название вашего сайта. Все права защищены.</p>
+    <p>Телефон: +7 (123) 456-78-90</p>
+</footer>
+</body>
+</html>
